@@ -139,7 +139,7 @@ public class NstApp {
                         eps.add(ep);
                     }
                 }
-                //System.out.println("Page:"+i+" EPS: " + eps.size());
+                System.out.println("Page:"+i+" EPS: " + eps.size());
             }
             //Mando el correo
             String fromEmail = email;
