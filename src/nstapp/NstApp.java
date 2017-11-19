@@ -121,7 +121,7 @@ public class NstApp {
                     name =(((JSONObject) content.get(k)).get(nameKey)).toString();
                     mail =(((JSONObject) content.get(k)).get(mailKey)).toString();
                     managers =(((JSONObject) content.get(k)).get(mangersKey)).toString();
-                    System.out.println(managers);
+                    //System.out.println(managers);
                     if(managers.length()>50){
                         int namesta =managers.lastIndexOf("\"full_name\":\"")+13;
                         int namefin = managers.indexOf("\"",namesta);
@@ -130,7 +130,7 @@ public class NstApp {
                         String manName = managers.substring(namesta, namefin);
                         String manMail = managers.substring(mailsta,mailfin);
                         String manager = manName +" ; " + manMail;
-                        System.out.println(manager);
+                        //System.out.println(manager);
                         String[] ep = new String[4];
                         ep[0] = id;
                         ep[1] = name;
@@ -139,7 +139,7 @@ public class NstApp {
                         eps.add(ep);
                     }
                 }
-                System.out.println("EPS " + eps.size());
+                //System.out.println("Page:"+i+" EPS: " + eps.size());
             }
             //Mando el correo
             String fromEmail = email;
